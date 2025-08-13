@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); /* استيراد خط Poppins من Google Fonts */
+* {
+  font-family: "Poppins", sans-serif; /* تحديد نوع الخط لجميع العناصر */
+  margin: 0; /* إزالة الهوامش الخارجية */
+  padding: 0; /* إزالة الحشو الداخلي */
+  box-sizing: border-box; /* حساب العرض والارتفاع مع الحشو والحدود */
+  scroll-behavior: smooth; /* جعل التمرير سلس عند النقر على الروابط */
+}
+
+header {
+  background-color: #f0f0f0; /* لون خلفية الهيدر */
+  width: 100%; /* عرض كامل الشاشة */
+  position: fixed; /* تثبيت الهيدر في الأعلى */
+  z-index: 999; /* ترتيب العنصر فوق العناصر الأخرى */
+  display: flex; /* عرض العناصر في صف واحد */
+  justify-content: space-between; /* توزيع العناصر بين البداية والنهاية */
+  align-items: center; /* محاذاة العناصر في المنتصف عمودياً */
+  padding: 10px 100px; /* حشو داخلي: 10px أعلى وأسفل، 100px يمين ويسار */
+}
+.logo {
+  text-decoration: none; /* إزالة الخط تحت الرابط */
+  color: #3a6cf4; /* لون النص */
+  text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+  font-weight: 700; /* سمك الخط */
+  font-size: 1.8em; /* حجم الخط */
+}
+.navigation a {
+  color: #3a6cf4; /* لون روابط التنقل */
+  text-decoration: none; /* إزالة الخط تحت الروابط */
+  font-size: 1.1em; /* حجم الخط */
+  font-weight: 500; /* سمك الخط */
+  padding-left: 30px; /* حشو من اليسار بين الروابط */
+}
+.navigation a:hover {
+  color: #601cfc; /* لون الروابط عند تمرير المؤشر */
+}
+section {
+  padding: 100px 200px; /* حشو داخلي: 100px أعلى وأسفل، 200px يمين ويسار */
+}
+.main {
+  width: 100%; /* عرض كامل الشاشة */
+  min-height: 100vh; /* ارتفاع كامل الشاشة كحد أدنى */
+  display: flex; /* عرض العناصر في صف واحد */
+  align-items: center; /* محاذاة العناصر في المنتصف عمودياً */
+  background: url(src/background.jpg) no-repeat; /* صورة الخلفية بدون تكرار */
+  background-size: cover; /* تغطية كاملة للخلفية */
+  background-position: center; /* موضع الصورة في المنتصف */
+  background-attachment: fixed; /* تثبيت الصورة أثناء التمرير */
+}
+
+.main h2 {
+  color: #fff; /* لون النص الأبيض */
+  font-size: 1.4em; /* حجم الخط */
+  font-weight: 500; /* سمك الخط */
+}
+.main h2 span {
+  display: inline-block; /* عرض كعنصر بلوك في السطر */
+  margin-top: 10px; /* هامش من الأعلى */
+  color: #3a6cf4; /* لون النص الأزرق */
+  font-size: 2.2em; /* حجم خط كبير */
+  font-weight: 600; /* سمك الخط */
+}
+.main h3 {
+  color: #fff; /* لون النص الأبيض */
+  font-size: 1.2em; /* حجم الخط */
+  font-weight: 700; /* سمك الخط */
+  letter-spacing: 1px; /* مسافة بين الحروف */
+  margin-top: 10px; /* هامش من الأعلى */
+  margin-bottom: 30px; /* هامش من الأسفل */
+}
+
+.main-btn {
+  color: #fff; /* لون النص الأبيض */
+  background-color: #3a6cf4; /* لون خلفية الزر */
+  text-decoration: none; /* إزالة الخط تحت الرابط */
+  font-size: 1.1em; /* حجم الخط */
+  font-weight: 600; /* سمك الخط */
+  display: inline-block; /* عرض كعنصر بلوك في السطر */
+  padding: 0.9375em 2.1875em; /* حشو داخلي للزر */
+  letter-spacing: 1px; /* مسافة بين الحروف */
+  border-radius: 15px; /* تدوير زوايا الزر */
+  margin-bottom: 40px; /* هامش من الأسفل */
+  transition: 0.7s ease; /* تأثير انتقالي لمدة 0.7 ثانية */
+}
+.main-btn:hover {
+  background-color: #0a49f6; /* لون الزر عند تمرير المؤشر */
+  transform: scale(1.1); /* تكبير الزر بنسبة 10% */
+}
+.social-icons a {
+  color: #fff; /* لون أيقونات التواصل الاجتماعي */
+  font-size: 1.7em; /* حجم الأيقونات */
+  padding-right: 30px; /* مسافة بين الأيقونات */
+}
+.social-icons a:hover {
+  color: #3a6cf4; /* لون الأيقونات عند تمرير المؤشر */
+}
+.title {
+  display: flex; /* عرض العناصر في صف واحد */
+  justify-content: center; /* محاذاة في المنتصف أفقياً */
+  color: #3a6cf4; /* لون العنوان */
+  font-size: 2.5em; /* حجم الخط */
+  font-weight: 800; /* سمك الخط */
+  margin-bottom: 30px; /* هامش من الأسفل */
+  /* align-items: center; محاذاة في المنتصف عمودياً */
+  /* flex-direction: column; ترتيب العناصر في عمود */
+}
+.content {
+  display: flex; /* عرض العناصر في صف واحد */
+  justify-content: center; /* محاذاة في المنتصف أفقياً */
+  flex-direction: row; /* ترتيب العناصر في صف */
+  flex-wrap: wrap; /* التفاف العناصر عند عدم وجود مساحة */
+}
+.card {
+  background-color: #fff; /* لون خلفية البطاقة */
+  width: 21.25em; /* عرض البطاقة */
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%); /* ظل للبطاقة */
+  /* height: 28.125em; ارتفاع البطاقة */
+  padding: 25px; /* حشو داخلي للبطاقة */
+  border-radius: 10px; /* تدوير زوايا البطاقة */
+  margin: 15px; /* هامش حول البطاقة */
+  transition: 0.7s ease; /* تأثير انتقالي لمدة 0.7 ثانية */
+}
+.card:hover {
+  transform: scale(1.1); /* تكبير البطاقة بنسبة 10% عند تمرير المؤشر */
+}
+.card .icon {
+  color: #3a6cf4; /* لون الأيقونة */
+  font-size: 8em; /* حجم الأيقونة */
+  text-align: center; /* محاذاة الأيقونة في المنتصف */
+}
+.info {
+  text-align: center; /* محاذاة النص في المنتصف */
+}
+.info h3 {
+  color: #3a6cf4; /* لون عنوان البطاقة */
+  font-size: 1.2em; /* حجم الخط */
+  font-weight: 700; /* سمك الخط */
+  margin-bottom: 10px; /* هامش من الأسفل */
+}
+.projects {
+  background-color: #000016;
+}
+.project .content {
+  margin-top: 30px;
+}
+.project-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  transition: 0.7s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+.project-image img {
+  width: 100%;
+}
+.project-info {
+  padding: 1em;
+}
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 1em;
+}
+.more-details {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+.more-details:hover {
+  color: #601cfc;
+}
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+.footer-title a {
+color: #3a6cf4;
+    text-decoration: none;
+}
+.footer-title a:hover {
+    color: #601cfc;
+}
+.social-icons a {
+    color: #fff;
+}
