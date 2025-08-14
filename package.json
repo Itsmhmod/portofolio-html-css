@@ -1,0 +1,50 @@
+{
+  "name": "mhmod-portfolio",
+  "version": "2.0.0",
+  "description": "A modern, responsive portfolio website showcasing PHP Backend Development skills",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linter configured\" && exit 0"
+  },
+  "keywords": [
+    "portfolio",
+    "responsive",
+    "html",
+    "css",
+    "javascript",
+    "php",
+    "backend",
+    "web-development",
+    "frontend"
+  ],
+  "author": {
+    "name": "Mhmod",
+    "email": "mhmod@gmail.com",
+    "url": "https://www.linkedin.com/in/its-mhmod"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Itsmhmod/portofolio-html-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Itsmhmod/portofolio-html-css/issues"
+  },
+  "homepage": "https://github.com/Itsmhmod/portofolio-html-css#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "private": true
+}

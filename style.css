@@ -6,6 +6,7 @@
   box-sizing: border-box; /* حساب العرض والارتفاع مع الحشو والحدود */
   scroll-behavior: smooth; /* جعل التمرير سلس عند النقر على الروابط */
 }
+/* Header start */
 
 header {
   background-color: #f0f0f0; /* لون خلفية الهيدر */
@@ -34,6 +35,8 @@ header {
 .navigation a:hover {
   color: #601cfc; /* لون الروابط عند تمرير المؤشر */
 }
+/* Header end */
+/* Main start */
 section {
   padding: 100px 200px; /* حشو داخلي: 100px أعلى وأسفل، 200px يمين ويسار */
 }
@@ -94,6 +97,8 @@ section {
 .social-icons a:hover {
   color: #3a6cf4; /* لون الأيقونات عند تمرير المؤشر */
 }
+/* Main end */
+/* Title start */
 .title {
   display: flex; /* عرض العناصر في صف واحد */
   justify-content: center; /* محاذاة في المنتصف أفقياً */
@@ -183,26 +188,89 @@ section {
 .more-details:hover {
   color: #601cfc;
 }
+.contact .icon {
+  font-size: 4.5em;
+}
+.contact .info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contact .info p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
 .footer {
   background-color: #000016;
   color: #fff;
-  padding: 1em 1em;
+  padding: 2em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
-
+  font-size: 1.3em;
+  font-weight: 600;
 }
 .footer-title a {
-color: #3a6cf4;
-    text-decoration: none;
+  color: #3a6cf4;
+  text-decoration: none;
 }
 .footer-title a:hover {
-    color: #601cfc;
+  color: #601cfc;
 }
 .social-icons a {
-    color: #fff;
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main-content h2 {
+    font-size: 1em;
+  }
+
+  .main-content h3 {
+    font-size: 1.6em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-content h2 {
+    font-size: 0.8em;
+  }
+
+  .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
 }
